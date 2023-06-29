@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>BAG - IndBuy</title>
+</head>
+<body>
+
+      <!-- NAVBAR STARRT -->
+      <nav class=" z-50 bg-gray-100">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 px-2 py-4">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <span class="text-2xl md:text-3xl font-bold text-gray-900"><span class="text-rose-500">Ind</span>buy.</span>
+          </a>
+        
+
+          <div class="w-full hidden md:block md:w-auto text-sm ms-auto">
+            <ul class="font-medium flex flex-col md:p-0 mt-4 py-5 items-center md:flex-row gap-5">
+              <li>
+                <a href="../../index.html" class="block hover:text-rose-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="block hover:text-rose-500">About</a>
+              </li>
+              <li>
+                <a href="#kontak" class="block hover:text-rose-500">Contact</a>
+              </li>
+              <li>
+                <a href="../../feature-page/register.html" class="block py-2 px-4 border border-rose-500 hover:text-white hover:bg-rose-500 transition-all">Log Out</a>
+              </li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-6 text-rose-500 hover:text-rose-400 cursor-pointer" fill="currentColor"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+            </ul>
+          </div>
+
+         
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+
+      <!-- <div class="product-main w-full h-screen"> -->
+        <p class="text-gray-500 px-5 sm:px-24 py-5">Home / Bag</p>
+        <section class="container my-5 px-5 mx-auto flex flex-col lg:flex-row justify-center gap-3 sm:gap-6 lg:gap-10">
+
+          <div class="PRODUCT w-[100%] lg:w-[25%]">
+            <div class="image-product w-full">
+              <img src="../../dist/BAG/BAG-6.jpg" alt="" class="w-[60%] mx-auto lg:w-full">
+            </div>
+            <div class="switch">
+              <!-- OPSIONAL -->
+            </div>
+          </div>
+
+          <div class="DESCRIPTION w-[100%] lg:w-[40%] p-3 border border-gray-400/50 rounded">
+            <h1 class="text-xl md:text-2xl xl:text-3xl font-bold text-rose-400">Handbag pria bahan kulit</h1>
+            <div class="stok-deliver flex gap-20 py-6">
+              <div class="stok flex gap-3 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather text-rose-500 feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <p class="text-sm">Stok Tersedia</p>
+              </div>
+              <div class="delivery flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather text-gray-600 feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                <p class="text-xs">Bebas Biaya <br> Pengiriman</p>
+              </div>
+            </div>
+            <div class="variant">
+              <h2 class="text-gray-500 font-bold text-xs">WARNA:</h2>
+              <div onclick="warna()" class="warna-pink relative hover:bg-gray-200 cursor-pointer flex gap-1 sm:gap-2 p-2 items-center mt-2 border border-gray-300 w-[30%] rounded-md">
+                <h1 class="rounded-full bg-amber-900 w-4 h-4 sm:w-5 sm:h-5 text-transparent">.</h1>
+                <h5 class="cream text-gray-800 text-sm">Coklat</h5>
+                <div class="icons absolute opacity-0 -right-2 -top-2 sm:right-0 sm:top-0"><svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500 feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+              </div>
+              <h2 class="text-gray-500 font-bold text-xs mt-3">BEBAN BARANG:</h2>
+              <h5 class="ukuran p-2 rounded-md cursor-pointer w-[30%] text-gray-800 text-sm">500 Gram</h5>
+            </div>
+            <div class="desc mt-5">
+              <p class="text-gray-800 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi sequi aliquid molestiae at laborum aperiam quas? Sapiente enim harum molestias assumenda recusandae! Eos corrupti dolor a exercitationem, rem quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus earum sit. Officia perferendis fugiat expedita excepturi ex aperiam ratione?</p>
+            </div>
+          </div>
+
+          <div class="PRICE w-[100%] lg:w-[25%] h-[50%] flex flex-col items-center px-3 pb-10 pt-5 border border-gray-400/50 rounded">
+            <h1 class="text-xl md:text-2xl xl:text-3xl font-bold text-gray-700">Rp. 356.000</h1>
+            <div class="plus-minus flex justify-center items-center my-5">
+              <button onclick="Minus()" id="minus" class="text-gray-900 hover:bg-slate-200 mx-3 p-1 px-2 rounded-full text-2xl">-</button> 
+              <input id="inputNumber" type="number" value="0" class="outline-none w-[50%] focus:ring-rose-500 focus:border-none">
+              <button onclick="Plus()" id="plus" class="text-gray-900 hover:bg-slate-200 mx-3 p-1 px-2 rounded-full text-2xl">+</button>
+            </div>
+            <button class="bg-rose-400 hover:bg-rose-500 font-bold text-white p-2 w-full">Tambah Ke Keranjang</button>
+          </div>
+
+        </section>
+
+
+              <!-- BOTTOM NAVIGATION -->
+      
+      <div class="fixed block md:hidden bottom-0 left-0 z-50 w-full h-16 border-t border-gray-500 bg-gray-50">
+        <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+            <button onclick="window.location.href = '../../index.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-6 h-6 mb-1 text-gray-800 hover:text-rose-500 group-hover:text-rose-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                <span class="text-sm group-hover:text-rose-500 text-gray-800 hover:text-rose-500">Home</span>
+            </button>
+            <button onclick="window.location.href = '../../page-menu/pembayaran.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-6 h-6 mb-1 text-gray-800 group-hover:text-rose-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+                </svg>
+                <span class="text-sm text-gray-800 group-hover:text-rose-500">Pembayaran</span>
+            </button>
+            <button onclick="window.location.href = '../../page-menu/keranjang.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="text-gray-800 w-6 h-6 mb-1 hover:text-rose-500 pt-1 cursor-pointer" fill="currentColor"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <span class="text-sm text-gray-800 group-hover:text-rose-500">Keranjang</span>
+            </button>
+            <button onclick="window.location.href = '../../page-menu/profile.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-6 h-6 mb-1 text-gray-800 group-hover:text-rose-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"></path>
+                </svg>
+                <span class="text-sm text-gray-800 group-hover:text-rose-500">Profile</span>
+            </button>
+        </div>
+      </div>
+      
+            <!-- BOTTOM NAVIGATION END -->
+
+<!-- FOOTER -->
+<section class="footer mt-36  px-4 sm:px-10 md:px-20 bg-gray-800 pt-[50px] pb-[120px] sm:pt-20 sm:pb-[50px]">
+  <div class="footer-box flex max-lg:flex-col max-lg:gap-8 gap-5 justify-between text-white">
+    <div class="box w-full lg:w-[40%]">
+      <h3 class="font-bold text-3xl"><span class="text-rose-500">Ind</span>buy.</h3>
+      <p class="mt-4 leading-7 w-full lg:w-[80%] text-slate-200">Belanja Di <span class="text-rose-500 font-bold">Ind</span>buy terasa lebih seru dan banyk gratis ongkir dengan menyediakan fitur yang termudah dan berbagai macam pembayaran termasuk COD ayo langsung belanja</p>
+    </div>
+    <div class="box w-full lg:w-[20%] flex gap-2 flex-col">
+    <h3 class="font-bold text-xl mb-">Menu</h3>
+    <a href="../../index.html" class="text-zinc-300 text-sm hover:text-white">Home</a>
+    <a href="../../index.html" class="text-zinc-300 text-sm hover:text-white">Category</a>
+    <a href="../../PAGE-MENU/keranjang.html" class="text-zinc-300 text-sm hover:text-white">Keranjang</a>
+    <a href="../../PAGE-MENU/profile.html" class="text-zinc-300 text-sm hover:text-white">Profil</a>
+    <a href="../../about.html" class="text-zinc-300 text-sm hover:text-white">About</a>
+    <a href="../../feature-page/register.html" class="text-zinc-300 text-sm hover:text-white">Log Out</a>
+    </div>
+
+    <div class="box w-full lg:w-[40%]" id="kontak">
+      <h3 class="font-bold text-xl">Contact Costumer Service</h3>
+      <form action="" class="flex flex-col gap-3 mt-5 text-black">
+        <input type="text" class="p-2 outline-none focus:ring-rose-500 border-none border-zinc-800" placeholder="Nama">
+        <input type="email" class="p-2 outline-none focus:ring-rose-500 border-none" placeholder="Email">
+        <textarea class="focus:ring-rose-500 border-0" placeholder="Tulis pesan" id="" cols="30" rows="5"></textarea>
+        <button class="py-2 px-4 border-none outline-none bg-rose-500 hover:bg-rose-600 w-28 text-white font-bold">Kirim</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- FOOTER END -->
+
+
+<script>
+
+  const inputNum = document.getElementById('inputNumber')
+
+  function Plus() {
+    let currentValue = parseInt(inputNum.value)
+    currentValue += 1;
+    inputNum.value = currentValue;
+  }
+  function Minus() {
+    let currentValue = parseInt(inputNum.value)
+    currentValue -= 1;
+    inputNum.value = currentValue;
+  }
+
+const warnaPink = document.querySelector('.warna-pink');
+const hide = document.querySelector('.opacity-0');
+
+function warna() {
+  warnaPink.classList.toggle('bg-gray-200')
+  hide.classList.toggle('opacity-100')
+}
+
+</script>
+    
+</body>
+</html>

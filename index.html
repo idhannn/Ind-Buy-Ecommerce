@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.css"  rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ind - Buy</title>
+</head>
+<body>
+
+  <!-- NAVBAR STARRT -->
+    <nav class=" z-50 bg-gray-100">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto sm:p-4 px-2 py-4">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <span class="text-2xl md:text-3xl font-bold text-gray-900"><span class="text-rose-500">Ind</span>buy.</span>
+          </a>
+
+<!-- search -->
+          <form class="lg:mx-auto ms-auto" onsubmit="event.preventDefault(); handleForm();">   
+            <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only">Search</label>
+            <div class="relative xl:w-[650px] lg:w-[450px] md:w-[300px] w-[230px]">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </div>
+                <input type="search" id="input-value" class="block w-full px-10 text-sm text-gray-900 border border-gray-300 focus:border-rose-300 bg-gray-50 focus:ring-rose-500" placeholder="Pakaian.." required>
+                <button class="text-white absolute right-1 bottom-[0.5px] bg-rose-500 hover:bg-rose-400 focus:ring-2 focus:outline-none focus:ring-rose-300 font-medium text-sm sm:px-5 py-[9px] px-3">Cari</button>
+            </div>
+        </form>
+        
+
+          <div class="w-full hidden md:block md:w-auto text-sm ms-auto">
+            <ul class="font-medium flex flex-col md:p-0 mt-4 py-5 items-center md:flex-row gap-5">
+              <li>
+                <a href="#" class="block text-rose-500" aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="about.html" class="block hover:text-rose-500">About</a>
+              </li>
+              <li>
+                <a href="#kontak" class="block hover:text-rose-500">Contact</a>
+              </li>
+              <li>
+                <a href="feature-page/register.html" class="block py-2 px-4 border border-rose-500 hover:text-white hover:bg-rose-500 transition-all">Log Out</a>
+              </li>
+              <li onclick="window.location.href= 'PAGE-MENU/keranjang.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="w-6 text-rose-500 hover:text-rose-400 cursor-pointer" fill="currentColor"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+              </li>
+            </ul>
+          </div>
+
+         
+        </div>
+      </nav>
+      <!-- NAVBAR END -->
+
+      <!-- CAROUSEL -->
+      <div class="container cursor-pointer flex items-center gap-5 mx-auto lg:px-16 sm:mt-5">
+<div  onclick="window.location.href='index.html'" id="default-carousel" class="relative lg:w-3/4 w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden mx-auto md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL-3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="dist/CAROUSEL/CAROUSEL-6.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- SLIDER TITLE -->
+
+  <!-- SLIDER TITLE END -->
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+</div>
+
+<div class="imej py-3 lg:grid grid-cols-2 gap-2 hidden">
+  <img onclick="window.location.href='KATEGORI/skincare.html'" src="dist/RANDOM/518bcN9yq5L._SX425_.jpg" alt="" class="w-44 hover:scale-105 hover:opacity-90 transition-all duration-300 hover:shadow-xl xl:h-[188px] cursor-pointer lg:h-[140px]">
+  <img onclick="window.location.href='KATEGORI/dress.html'"  src="dist/RANDOM/716p8mAd83L._UX425_.jpg" alt="" class="w-44 hover:scale-105 cursor-pointer hover:opacity-90 duration-300 hover:shadow-xl xl:h-[188px] lg:h-[140px]">
+  <img  onclick="window.location.href='KATEGORI/skincare.html'" src="dist/RANDOM/71VcmGANn8L._SL1500_.jpg" alt="" class="w-44 hover:scale-105 cursor-pointer hover:opacity-90 duration-300 hover:shadow-xl xl:h-[188px] lg:h-[140px]">
+  <img  onclick="window.location.href='KATEGORI/skincare.html'" src="dist/RANDOM/81c5y0tuY2L._SL1500_.jpg" alt="" class="w-44 hover:scale-105 cursor-pointer hover:opacity-90 duration-300 hover:shadow-xl xl:h-[188px] lg:h-[140px]">
+</div>
+</div>
+      <!-- CAROUSEL END -->
+
+<!-- KATEGORI -->
+<section class="kategori pb-5 md:py-10 md:px-10 bg-slate-50">
+  <div class="container mx-auto">
+    <h1 class="font-medium text-gray-600 py-5 pl-10">KATEGORI</h1>
+    <div class="card-box flex flex-wrap justify-center gap-2 md:gap-3">
+
+<a href="KATEGORI/bag.html">
+  <div class="BAG bg-white shadow transition-all cursor-pointer border-b border-rose-400">
+    <img src="dist/BAG/BAG-2.jpg" alt="" class="w-16 sm:w-32 md:w-40 border hover:border-rose-400 hover:shadow-lg hover:scale-110 transition-all">  
+    <h1 class="text-sm sm:text-base font-semibold text-gray-800 pt-1 ms-2 md:py-3 md:ms-4">Tas</h1>
+  </div>
+</a>
+
+<a href="KATEGORI/clock.html">
+  <div class="CLOCK bg-white shadow transition-all cursor-pointer border-b border-rose-400">
+    <img src="dist/CLOCK/CLOCK-10.jpg" alt="" class="w-16 sm:w-32 md:w-40 border hover:border-rose-400  hover:shadow-lg hover:scale-110 transition-all">  
+    <h1 class="text-xs sm:text-base font-semibold text-gray-800 pt-1 ms-2 lg:py-3 lg:ms-4">Jam</h1>
+  </div>
+</a>
+
+<a href="KATEGORI/dress.html">
+  <div class="DRESS bg-white shadow transition-all cursor-pointer border-b border-rose-400">
+    <img src="dist/DRESS/DRESS-12.jpg" alt="" class="w-16 sm:w-32 md:w-40 border hover:border-rose-400  hover:shadow-lg hover:scale-110 transition-all">  
+    <h1 class="text-xs sm:text-base font-semibold text-gray-800 pt-1 ms-2 md:py-3 md:ms-4">Pakaian</h1>
+  </div>
+</a>
+
+<a href="KATEGORI/shoes.html">
+  <div class="CLOCK bg-white shadow transition-all cursor-pointer border-b border-rose-400">
+    <img src="dist/RANDOM/719RMxngi8L._UY625_.jpg" alt="" class="w-16 sm:w-32 md:w-40 border hover:border-rose-400 hover:shadow-lg hover:scale-110 transition-all">  
+    <h1 class="text-xs sm:text-base font-semibold text-gray-800 pt-1 ms-2 md:py-3 md:ms-4">Sepatu</h1>
+  </div>
+</a>
+
+<a href="KATEGORI/skincare.html">
+  <div class="CLOCK bg-white shadow transition-all cursor-pointer border-b border-rose-400">
+    <img src="dist/RANDOM/51wKCAfJcbL._SY450_.jpg" alt="" class="w-16 sm:w-32 md:w-40 border hover:border-rose-400 hover:shadow-lg hover:scale-110 transition-all">  
+    <h1 class="text-xs sm:text-base font-semibold text-gray-800 pt-1 ms-2 md:py-3 md:ms-4">Skincare</h1>
+  </div>
+</a>
+
+    </div>
+  </div>
+</section>
+<!-- KATEGORI END -->
+
+
+<!-- REKOMENDASI -->
+<section class="rekomendasi pb-5 bg-slate-50">
+  <div class="title py-3 bg-white">
+    <h1 class="text-center font-semibold text-rose-500">REKOMENDASI</h1>
+    <hr class="w-1/2 mx-auto">
+  </div>
+  <div class="box-rekomen mx-auto bg-slate-50">
+    <div class="container mx-auto flex flex-wrap gap-2 sm:gap-5 py-5 justify-center">
+
+      <div onclick="window.location.href='PRODUCT/bag/bag.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <div class="img-product">
+          <img src="dist/BAG/BAG-1.jpg" alt="" class="border-b-2">
+        </div>
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Tas Wanita Terbaru 2023 Branded Import</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>198.000</h1>
+        </div>
+      </div>
+
+      <div onclick="window.location.href='PRODUCT/clock/clock.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/CLOCK/CLOCK-1.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Eth T789 Wwatch jam Tangan Kekinian</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>120.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/dress/dress.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/DRESS/DRESS-1.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Kemeja Pria Dewasa Tangan Pendek</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>87.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/bag/bag copy.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/BAG/BAG-2.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Slim Girl Pink Tas Terbaru Import</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>200.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/dress/dress copy 8.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/DRESS/DRESS-19.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">kaos Hitam Naruto Semua Ukuran</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>60.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/clock/clock copy 3.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/CLOCK/CLOCK-5.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">EG Wolf Jam Tangan Klasik Warna Coklat Premium</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>300.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/clock/clock.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/CLOCK/CLOCK-9.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Smart Watch White Premium Modern 2024</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>150.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/bag/bag copy 5.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/BAG/BAG-6.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Tas Kulit Coklat Premium Import</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>250.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/dress/dress copy 3.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/DRESS/DRESS-13.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Dress Wanita Merah Glamor Bahan Premium</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>260.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/bag/bag copy 3.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/BAG/BAG-4.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Tas Kulit Hitam Wanita Mewah Premium</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>230.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/bag/bag copy 8.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/BAG/BAG-11.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Dompet Kulit Pria Coklat Elegan Premium</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>170.000</h1>
+        </div>
+      </div>
+      <div onclick="window.location.href='PRODUCT/dress/dress copy 4.html'" class="card w-[150px] sm:w-48 bg-white shadow hover:shadow-lg transition-all border-2 hover:border hover:border-rose-500 cursor-pointer">
+        <img src="dist/DRESS/DRESS-15.jpg" alt="" class="border-b-2">
+        <div class="title pt-3 pb-1 px-2">
+          <h1 class="text-xs sm:text-sm">Gamis Muslimah Berbahan Premium Plus Hijab</h1>
+          <h1 class="font-medium flex pt-5 text-rose-500 text-lg sm:text-xl"><p class="text-xs sm:text-sm font-normal">Rp.</p>280.000</h1>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!-- REKOMENDASI END -->
+
+<!-- DISKON -->
+<section class="diskon pt-8 sm:pb-16 w-full">
+  <div class="container mx-auto flex justify-center">
+    <div class="box-img h-[200px] sm:h-[300px] relative overflow-hidden w-full lg:w-[80%]">
+      <h2 class="text-2xl sm:text-[40px] font-bold absolute text-white z-10 w-full bg-gradient-to-r from-gray-900 justify-center h-full leading-tight p-3  sm:p-5">Diskon dan dapatkan <br> gratis ongkir <span class="text-rose-500">67%</span> <br> dengan belanja <br> menggunakan <span class="text-rose-500">gopay</span><br> <button onclick="alert('MAAF FITUR INI BELUM TERSEDIA')" class="text-[10px] sm:text-sm ms-auto font-normal sm:font-medium hover:bg-rose-500 bg-rose-600 py-1 px-2 sm:py-2 sm:px-4">Coba sekarang</button></h2>
+      <div class="bg-gray-900/30 absolute left-0 top-0 w-full h-full"></div>
+      <img src="dist/CAROUSEL/CAROUSEL-1.jpg" class="w-full h-full object-cover" alt="">
+    </div>
+</div>
+</section>
+<!-- DISKON END -->
+
+<!-- BRAND -->
+  <section class="py-6 sm:py-12">
+    <div class="container mx-auto px-5 sm:px-10">
+      <div class="image flex justify-center items-center">
+        <img src="dist/Artboard – 1.jpg" class="w-[25%] lg:w-[15%] grayscale hover:grayscale-0" alt="">
+        <img src="dist/Artboard – 1.png" class="w-[25%] lg:w-[15%] grayscale hover:grayscale-0" alt="">
+        <img src="dist/brand.png" class="w-[25%] lg:w-[15%] grayscale hover:grayscale-0" alt="">
+        <img src="dist/brand.jpg" class="w-[25%] lg:w-[15%] grayscale hover:grayscale-0" alt="">
+      </div>
+    </div>
+  </section>
+<!-- BRAND END -->
+
+<!-- FOOTER -->
+<section class="footer px-4 sm:px-10 md:px-20 bg-gray-800 pt-[50px] pb-[120px] sm:pt-20 sm:pb-[50px]">
+  <div class="footer-box flex max-lg:flex-col max-lg:gap-8 gap-5 justify-between text-white">
+    <div class="box w-full lg:w-[40%]">
+      <h3 class="font-bold text-3xl"><span class="text-rose-500">Ind</span>buy.</h3>
+      <p class="mt-4 leading-7 w-full lg:w-[80%] text-slate-200">Belanja Di <span class="text-rose-500 font-bold">Ind</span>buy terasa lebih seru dan banyk gratis ongkir dengan menyediakan fitur yang termudah dan berbagai macam pembayaran termasuk COD ayo langsung belanja</p>
+    </div>
+    <div class="box w-full lg:w-[20%] flex gap-2 flex-col">
+    <h3 class="font-bold text-xl mb-">Menu</h3>
+    <a href="#" class="text-zinc-300 text-sm hover:text-white">Home</a>
+    <a href="#" class="text-zinc-300 text-sm hover:text-white">Category</a>
+    <a href="PAGE-MENU/keranjang.html" class="text-zinc-300 text-sm hover:text-white">Keranjang</a>
+    <a href="PAGE-MENU/profile.html" class="text-zinc-300 text-sm hover:text-white">Profil</a>
+    <a href="about.html" class="text-zinc-300 text-sm hover:text-white">About</a>
+    <a href="feature-page/register.html" class="text-zinc-300 text-sm hover:text-white">Log Out</a>
+    </div>
+
+    <div class="box w-full lg:w-[40%]" id="kontak">
+      <h3 class="font-bold text-xl">Contact Costumer Service</h3>
+      <form action="" class="flex flex-col gap-3 mt-5 text-black">
+        <input type="text" class="p-2 outline-none focus:ring-rose-500 border-none border-zinc-800" placeholder="Nama">
+        <input type="email" class="p-2 outline-none focus:ring-rose-500 border-none" placeholder="Email">
+        <textarea class="focus:ring-rose-500 border-0" placeholder="Tulis pesan" id="" cols="30" rows="5"></textarea>
+        <button class="py-2 px-4 border-none outline-none bg-rose-500 hover:bg-rose-600 w-28 text-white font-bold">Kirim</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- FOOTER END -->
+
+      <!-- BOTTOM NAVIGATION -->
+      
+      <div class="fixed block md:hidden bottom-0 left-0 z-50 w-full h-16 border-t border-gray-500 bg-gray-50">
+        <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+            <button onclick="window.location.href = 'index.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-6 h-6 mb-1 text-rose-500 group-hover:text-rose-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                <span class="text-sm group-hover:text-rose-500 text-rose-500">Home</span>
+            </button>
+            <button onclick="window.location.href = 'page-menu/pembayaran.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-6 h-6 mb-1 text-gray-800 group-hover:text-rose-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+                </svg>
+                <span class="text-sm text-gray-800 group-hover:text-rose-500">Pembayaran</span>
+            </button>
+            <button onclick="window.location.href = 'page-menu/keranjang.html'" type="button" class="inline-flex hover:text-rose-500 flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class=" w-6 h-6 mb-1 hover:text-rose-500 pt-1 cursor-pointer" fill="currentColor"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <span class="text-sm text-gray-800 group-hover:text-rose-500">Keranjang</span>
+            </button>
+            <button onclick="window.location.href = 'page-menu/profile.html'" type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-6 h-6 mb-1 text-gray-800 group-hover:text-rose-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"></path>
+                </svg>
+                <span class="text-sm text-gray-800 group-hover:text-rose-500">Profile</span>
+            </button>
+        </div>
+      </div>
+      
+            <!-- BOTTOM NAVIGATION END -->
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+<script>
+
+  
+function handleForm() {
+  const dress = ['baju', 'pakaian', 'kaos', 'dress', 'kameja', 'kemeja', 'dress', 'gamis', 'hijab', 'kerudung', 'celana', 'jeans','T-shirt','tshirt','Shirt','Blouse','Sweater','Hoodie','Jacket','Coat','Dress','Skirt','Pants','Jeans','Shorts','Suit','Blazer','Jumpsuit','Romper','Cardigan','Tank top','Crop top','Polo shirt','Trousers','Pants','Jeans','Leggings','Shorts','Capri pants','Culottes','Cargo pants','Sweatpants','Chinos','Slacks','Jeggings','Track pants',]
+  const bag = ['tas', 'bag' , 'dompet', 'tas kulit',' Ransel', 'Tas tangan', 'Tas bahu', 'Tas selempang', 'Tas jinjing', 'Tas pinggang', 'Tas gendong', 'Tas jinjing', 'Tas ransel', 'Tas kerja', 'Tas laptop', 'Tas jinjing', 'Tas jinjing', 'Tas pinggang', 'Tas olahraga', 'Tas pesta', 'Tas kosmetik', 'Tas punggung', 'Tas koper', 'Backpack', 'Tote bag', 'Handbag', 'Shoulder bag', 'Clutch', 'Satchel', 'Crossbody bag', 'Messenger bag', 'Hobo bag', 'Bucket bag', 'Duffel bag', 'Briefcase', 'Laptop bag', 'Waist bag', 'Fanny pack', 'Wallet', 'Wristlet', 'Trolley bag', 'Travel bag', 'Gym bag']
+  const clock = ['jam tangan', 'jam', 'smartwatch', 'watch', 'smart watch', 'clock', ' Analog watch','Digital watch','Wristwatch','Pocket watch','Smartwatch','Chronograph','Dress watch','Pilot watch','Sports watch','Luxury watch',]
+  const shoes = ['sepatu', 'sepatu kulit', 'shoes', 'shoe', 'sepatu pria', 'sepatu cowo', 'sneaker', ' Sneakers','Loafers','Oxfords','Sandals','Flip-flops','Boots','High heels','Wedges','Flats','Espadrilles','Moccasins','Slippers','Athletic shoes','Running shoes','Basketball shoes','Tennis shoes','Hiking boots','Chelsea boots','Brogues','Ballet flats']
+  const skincare = ['skincare', 'sunscreen', 'facewash', 'face wash', 'sabun', 'sabun mandi', 'soap', 'sampo', 'shampo', 'toner', 'serum', 'wash', 'body wash', 'facial', 'facial wash']
+
+  const inputValue = document.getElementById('input-value').value.toLowerCase();
+
+  const urlDress = 'KATEGORI/dress copy.html?keyword=' + encodeURIComponent(inputValue);
+  const urlBag = 'KATEGORI/bag copy.html?keyword=' + encodeURIComponent(inputValue);
+  const urlClock = 'KATEGORI/clock copy.html?keyword=' + encodeURIComponent(inputValue);
+  const urlShoes = 'KATEGORI/shoes copy.html?keyword=' + encodeURIComponent(inputValue);
+  const urlSkincare = 'KATEGORI/skincare copy.html?keyword=' + encodeURIComponent(inputValue);
+  
+  if( dress.includes(inputValue) ) {
+    window.location.href = urlDress;
+  }else if( bag.includes(inputValue) ) {
+    window.location.href = urlBag;
+  }else if( clock.includes(inputValue) ) {
+    window.location.href = urlClock;
+  }else if( shoes.includes(inputValue) ) {
+    window.location.href = urlShoes;
+  }else if( skincare.includes(inputValue) ) {
+    window.location.href = urlSkincare;
+  }else{
+    window.location.href = 'notFound.html'
+  }
+}
+
+</script>
+
+
+
+    <script src="flowbidist/flowbite.min.js"></script>
+</body>
+</html>
